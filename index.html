@@ -1,0 +1,191 @@
+<!doctype html>
+<html class="no-js" lang="es-ES">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kodekama árbol ginseng, página de producto. Tienda Kodekamas Mediterráneos</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description"
+        content="Descubre los kodekamas: composiciones botánicas artesanales inspiradas en la técnica japonesa del kokedama. Elige entre distintos formatos y transforma cualquier espacio.">
+  <meta property="og:title" content="Kodekama árbol ginseng, página de producto. Tienda Kodekamas Mediterráneos">
+  <meta property="og:type" content="product">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <div class="skip-to-content">
+      <span>Saltar al <a href="#mainContent">contenido principal</a> o al <a
+        href="#footerContent">pie de página</a></span>
+    </div>
+    <div class="header">
+      <div class="header__brand">
+        <img src="img/brand.svg" alt="Logo de Kodekama, arte botánico artesanal">
+      </div>
+      <nav class="header__nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="#">Kodekama</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="mainContent" class="product">
+  <div class="container">
+    <h1 tabindex="-1">Kodekama árbol ginseng - Pequeño</h1>
+    <div class="product__grid">
+      <div class="product__images">
+        <div class="product__imageMajor">
+          <img src="img/kodekama1.webp"
+               alt="Kokedama árbol ginseng con bola de musgo sobre soporte de pizarra cuadrada negra.">
+        </div>
+        <div class="product__imageSecondary">
+          <div>
+            <img src="img/kodekama2.webp"
+                 alt="Detalle del producto: El tronco del pequeño árbol ginseng está entrelazado.">
+          </div>
+          <div>
+            <img src="img/kodekama3.webp"
+                 alt="Kodekama sobre soporte de pizarra redonda, ideal para decoración minimalista en salón.">
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <section class="product__info">
+          <h2>Información del producto</h2>
+          <span class="price">Precio: 10,24€</span>
+          <p><b>Tamaño:</b> pequeño</p>
+          <p class="product__desc">
+            Alto poder de purificación del aire. Sus flores blancas se regeneran en lugares con buena iluminación y nos
+            muestra de forma muy clara cuándo necesita riego a través de la textura de sus hojas.
+          </p>
+          <a href="#productVariants">Ver otros tamaños disponibles y sus precios</a>
+          <details class="product__details">
+            <summary>Características del producto</summary>
+            <ul>
+              <li>Tamaño: pequeño</li>
+              <li>Altura: aproximadamente 20 centímetros</li>
+              <li>Base: aproximadamente 16 centímetros de diámetro</li>
+              <li>Maceta: base de pizarra negra</li>
+            </ul>
+          </details>
+        </section>
+
+        <section id="productVariants" class="product__variants">
+          <h3 id="formato">Otros tamaños:</h3>
+          <ul class="product__variant-grid" aria-labelledby="formato">
+            <!-- Inserción botones -->
+          </ul>
+        </section>
+        <button type="button" class="product__add-btn">
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<section class="contact">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p>¿Quieres ponerte en contacto con nosotros? Utiliza nuestro formulario para ponerte en contacto con nosotros.
+      Déjanos tus datos personales y nos pondremos en contacto contigo lo antes posible:</p>
+    <div id="formErrors" class="form-errors" aria-live="polite"></div>
+    <form class="contact__form" id="formulario">
+      <div class="inputGrp">
+        <div class="formGroup">
+          <label class="label-form" for="name">Nombre y apellidos (obligatorio)</label>
+          <input class="form-control" type="text" name="name" id="name" required>
+          <span class="contact__errorMsg"></span>
+        </div>
+        <div class="formGroup">
+          <label class="label-form" for="email">Correo electrónico (obligatorio)</label>
+          <input class="form-control" type="email" name="email" id="email" required>
+          <span class="contact__errorMsg"></span>
+        </div>
+        <div class="formGroup">
+          <label class="label-form" for="phone">Teléfono (obligatorio)</label>
+          <input class="form-control" type="tel" name="phone" id="phone" required>
+          <span class="contact__errorMsg"></span>
+        </div>
+        <div class="formGroup">
+          <label class="label-form" for="message">Mensaje</label>
+          <textarea class="form-control" name="message" id="message"></textarea>
+        </div>
+      </div>
+
+      <span id="errorMessageCheck"></span>
+      <input type="checkbox" name="legal" id="legal" required>
+      <label id="checkLabel" for="legal">He leído y acepto la <a href="#" title="Ir a la página política de privacidad">Política
+        de privacidad</a></label>
+
+      <button type="submit" class="contact__form-btn">
+        Enviar formulario de contacto
+      </button>
+    </form>
+  </div>
+</section>
+
+<footer id="footerContent">
+  <div class="container">
+    <div class="footer">
+      <section>
+        <h3>Navegación principal</h3>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Kodekama</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Redes sociales</h3>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Información legal</h3>
+        <ul>
+          <li><a href="#">Declaración de accesibilidad</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Aviso legal</a></li>
+          <li><a href="#">Condiciones de compra</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</footer>
+
+<div id="sr-alert" class="sr-only" role="status" aria-live="polite"></div>
+
+<div id="emailModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"
+     aria-describedby="modalDesc" hidden>
+  <div class="modal__content" role="document" tabindex="-1">
+    <h3 id="modalTitle">¿Quieres revisar tu correo?</h3>
+    <p id="modalDesc">Has salido del campo de correo pero hemos detectado un error de formato. ¿Quieres volver a
+      corregirlo antes de continuar?</p>
+    <div class="modal__actions">
+      <button class="modal__button-accept" id="reviewEmail">Revisar correo electrónico</button>
+      <button class="modal__button-decline" id="skipEmail">Continuar al siguiente campo</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/logicaProductos.js" defer></script>
+<script src="js/form.js" defer></script>
+<script src="js/modalEmail.js" defer></script>
+</body>
+</html>

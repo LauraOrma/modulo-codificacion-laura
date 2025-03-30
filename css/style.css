@@ -1,0 +1,495 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+/* ================================
+   BASE STYLES
+================================ */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection,
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ================================
+   HELPER CLASSES
+================================ */
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+.visually-hidden {
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ================================
+   BASE ELEMENT STYLES
+================================ */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  display: block;
+  border: 0;
+  background: none;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #DED7C4;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ================================
+   HEADER
+================================ */
+header {
+  padding: 1rem 0;
+  background: #372F28;
+}
+
+.header a {
+  color: white;
+  display: block;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    min-height: 4rem;
+  }
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.header__brand img {
+  max-height: 60px;
+}
+
+@media (min-width: 768px) {
+  .header__brand img {
+    max-height: 80px;
+  }
+
+  .header__brand {
+    gap: 4rem;
+    min-height: 4rem;
+  }
+}
+
+.header__nav {
+  margin: 0 auto;
+}
+
+.header__nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .header__nav ul {
+    justify-content: flex-end;
+  }
+}
+
+/* ================================
+   BUTTONS
+================================ */
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+/* ================================
+   MAIN CONTENT
+================================ */
+main {
+  padding: 2rem 0;
+  color: #372F28;
+}
+
+main a {
+  color: #372F28;
+  font-weight: bold;
+}
+
+main a:hover {
+  color: #225715;
+}
+
+/* ================================
+   DETAILS
+================================ */
+details {
+  border: 2px solid #372F28;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+details summary {
+  font-weight: bold;
+}
+
+details ul {
+  padding: 1rem 1rem 0 1rem;
+}
+
+details ul li {
+  padding: 0.25rem 0;
+}
+
+/* ================================
+   PRODUCT GRID
+================================ */
+.product__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0rem;
+}
+
+@media (min-width: 768px) {
+  .product__grid {
+    grid-template-columns: 4fr 5fr;
+    grid-gap: 2rem;
+  }
+}
+
+/* ================================
+   PRODUCT IMAGES
+================================ */
+.product__images {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+}
+
+.product__imageSecondary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+/* ================================
+   PRODUCT DETAILS
+================================ */
+.product__details {
+  margin-top: 1.5rem;
+}
+
+.product__variant-grid {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.product__variant-option {
+  display: block;
+  max-width: 200px;
+  min-width: 90px;
+  font-size: 1rem;
+}
+
+.price {
+  display: block;
+  font-weight: bold;
+  color: #225715;
+  font-size: 20px;
+}
+
+.product__variant-format {
+  background: #372F28;
+  color: #DED7C4;
+  padding: 1rem;
+  border-radius: 8px 8px 0 0;
+}
+
+.product__variant-price {
+  border-radius: 0 0 8px 8px;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #372F28;
+}
+
+/* ================================
+   ACTION BUTTONS
+================================ */
+.product__add-btn,
+.contact__form-btn {
+  background: #225715;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* ================================
+   CONTACT FORM
+================================ */
+.contact {
+  padding: 1rem 0;
+  background: white;
+}
+
+.formGroup {
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.formGroup textarea {
+  min-height: 80px;
+}
+
+.contact__form {
+  padding-bottom: 2rem;
+}
+
+.contact__form-btn {
+  margin-top: 1.5rem;
+}
+
+.contact__errorMsg {
+  color: brown;
+  display: block;
+  padding-top: 0.5rem;
+  font-size: 14px;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+  background: #372F28;
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer a {
+  padding: 0.5rem 0;
+  display: block;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+}
+
+/* ================================
+   MODAL
+================================ */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.modal__content {
+  background: #fff;
+  padding: 2rem;
+  max-width: 400px;
+  min-width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#modalTitle {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.modal__actions {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__button-accept {
+  display: block;
+  background: #225715;
+  padding: 1rem;
+  width: 100%;
+  color: white;
+  font-size: 1rem;
+}
+
+.modal__button-decline {
+  display: block;
+  border: 2px solid #225715;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* ================================
+   SKIP TO CONTENT
+================================ */
+.skip-to-content {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 300px;
+  background-color: #efefef;
+  padding: 1rem;
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+}
+
+.skip-to-content a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #225715;
+}
+
+.skip-to-content:focus,
+.skip-to-content:focus-within {
+  transform: translateY(0%);
+}
+
+/* ================================
+   SCREEN READER ONLY
+================================ */
+.sr-only {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+}
